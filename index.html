@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+    <main>
+        <section class="rating-box box">
+            <div class="rating-box__img">
+                <img src="./images/icon-star.svg" alt="" class="rating-box__img__content">
+            </div>
+
+            <div class="rating-box__text">
+
+            </div>
+
+            <div class="rating-box__text">
+                <h1>How did we do?</h1>
+
+                <p>Please let us know how we did with your support request. All feedback is appreciated 
+                    to help us improve our offering!</p>     
+            </div>
+        
+            <form class="rating-box__rating" id="form" onsubmit="return false">
+                <input class = "rating-btn" type="radio" name="ratings" id="rating1" value="1">
+                <label for="rating1">1</label>
+
+                <input class = "rating-btn" type="radio" name="ratings" id="rating2" value="2">
+                <label for="rating2">2</label>
+
+                <input class = "rating-btn active" type="radio" name="ratings" id="rating3" value="3">
+                <label for="rating3">3</label>
+
+                <input class = "rating-btn" type="radio" name="ratings" id="rating4" value="4">
+                <label for="rating4">4</label>
+
+                <input class = "rating-btn" type="radio" name="ratings" id="rating5" value="5">
+                <label for="rating5">5</label>
+            </form>
+            
+            <div class="rating-box__button">
+                <button type="submit">SUBMIT</button> 
+                <div id="submit-error"></div>
+            </div>
+        
+            
+        </section>
+
+        <section class="thank-you box hidden">
+            <div class="thank-you__img">
+                <img src="./images/illustration-thank-you.svg" alt="" class="thank-you__img__content">
+            </div>
+
+            <div class="thank-you__rating" id="rating-selection">
+                <p class="selection"></p>
+            </div>
+            
+            <div class="thank-you__msg">
+                <h1>Thank you!</h1> 
+        
+                <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+                    don’t hesitate to get in touch!</p>
+            </div>
+        
+            
+        </section>
+       
+  
+      
+    </main>
+
+    <script src="app.js"></script>
+
+ 
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
